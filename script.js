@@ -44,10 +44,42 @@ let cubeS=6*(sideA**2);
 document.write(`Результаты:  объем куба V = ${volumeCube} <br>  и площадь его поверхности S = ${cubeS} `);
 
 
-
 document.write(`<h3>Задача 6 </h3>`);
 document.write(`Даны длины ребер a, b, c прямоугольного параллелепипеда.<br> Найти его объем V = a·b·c и площадь поверхности S = 2·(a·b + b·c + a·c). <br>`);
-
 let parallelepipedV=sideA*sideB*sideC;
 let parallelepipedS=2*(sideA*sideB+sideB*sideC+sideA*sideC);
 document.write(`Результаты прямоугольного параллелепипеда:  объем V = ${parallelepipedV} <br>  и площадь его поверхности S = ${parallelepipedS} `);
+
+
+document.write(`<h3>Задача 7 </h3>`);
+document.write(`Найти длину окружности L и площадь круга S заданного радиуса R:L = 2·π·R, S = π·R2.<br> В качестве значения π использовать 3.14. <br>`);
+let radius=+prompt(`Введите радиус окружности`);
+let circleLength=2*PI*radius;
+let circleS=PI*radius**2;
+document.write(`Длина окружности L = ${circleLength.toFixed(2)} и площадь круга S = ${circleS.toFixed(2)} `);
+
+
+document.write(`<h3>Задача 8 </h3>`);
+document.write(`Даны два числа a и b. Найти их среднее арифметическое: (a + b)/2. <br>`);
+let average = (sideA+sideB)/2;
+document.write(`Их среднее арифметическое = ${average}`);
+
+
+document.write(`<h3>Задача 9 </h3>`);
+document.write(`Даны два неотрицательных числа a и b. <br>Найти их среднее геометрическое, т. е. квадратный корень из их произведения: (a·b)1/2. <br>`);
+let geometric =(sideA*sideB)**0.5;
+document.write(`Их среднее геометрическое = ${geometric.toFixed(2)}`);
+
+
+document.write(`<h3>Задача 10 </h3>`);
+document.write(`Даны два ненулевых числа. Найти сумму, разность, произведение и частное их квадратов. <br>`);
+let plus= sideB**2+sideC**2;
+let minus=sideB**2-sideC**2;
+let multiply=sideB**2-sideC**2;
+let divide=sideB**2-sideC**2;
+
+
+document.write(`сумма:        ${sideB}^2 + ${sideC}^2 = ${plus} <br>`);
+document.write(`разность:     ${sideB}^2 - ${sideC}^2 = ${minus}<br>`);
+document.write(`произведение: ${sideB}^2 * ${sideC}^2 = ${multiply}<br>`);
+document.write(`частное:      ${sideB}^2 / ${sideC}^2 = ${divide}<br>`);
